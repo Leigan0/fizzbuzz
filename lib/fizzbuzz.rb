@@ -1,5 +1,7 @@
 def fizzbuzz(number)
-  # first check if divisible by 3 and 5 (i.e. by 15)
+  # first check if 0
+  return number if number == 0
+  # then check if divisible by 3 and 5 (i.e. by 15)
   return 'fizzbuzz' if number % 15 == 0
   # then check if divisible by 3 only
   return 'fizz' if number % 3 == 0
