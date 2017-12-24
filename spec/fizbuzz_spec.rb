@@ -10,8 +10,11 @@ describe 'fizzbuzz' do
   it 'returns "fizzbuzz" when passed 15' do
     expect(fizzbuzz(15)).to eq 'fizzbuzz'
   end
-  it 'returns 1 when passed 1' do
+  it 'returns number when passed number that is not divisible by 3 or 5' do
     expect(fizzbuzz(1)).to eq 1
+  end
+  it 'returns number when passed number that is not divisible by 3 or 5' do
+    expect(fizzbuzz(88)).to eq 88
   end
   it 'returns "fizz" when passed a multiple of 3' do
     expect(fizzbuzz([3, 6, 9, 12, 18].sample)).to eq 'fizz'
