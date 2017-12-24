@@ -22,4 +22,7 @@ describe 'fizzbuzz' do
   it 'returns "fizzbuzz" when passed a multiple of 3 and 5' do
     expect(fizzbuzz([30,45,300,300].sample)).to eq 'fizzbuzz'
   end
+  it 'returns "buzz" when passed a multiple of 5' do
+    expect(fizzbuzz([5, 10, 25, 75, 100].sample)).to eq 'buzz'
+  end
 end
